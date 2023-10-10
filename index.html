@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASSIGNMENTFORM</title>
+  </head>
+  <body>
+    <form action="message.html">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          name="name"
+          id="fname"
+          required
+          pattern="[A-Za-z]{3,10}"
+          placeholder="Ex:chaithra"
+        /><br /><br />
+        <label for="mname">Middle Name</label>
+        <input type="text" name="name" id="mname" /><br /><br />
+        <label for="fname">Last Name</label>
+        <input type="text" name="name" id="lname" /><br /><br />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Ex:chaithra@gmail.com"
+        /><br /><br />
+        <label for="dob">DOB</label>
+        <input type="date" name="dob" id="dob" /><br /><br />
+        <label for="contact">Contact</label>
+        <input
+          type="tel"
+          required
+          id="contact"
+          name="name"
+          pattern="[6-9][0-9]{0,}"
+          placeholder="64236426543"
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Course Details</legend>
+        <label for="">Department</label><br />
+        <br />
+        <input type="radio" name="dept" id="cs" />
+        <label for="cs">CS</label>
+
+        <input type="radio" name="dept" id="civil" />
+        <label for="civil">CIVIL</label>
+
+        <input type="radio" name="dept" id="mech" />
+        <label for="mech">MECHANICAL</label>
+        <br />
+        <label for="yop">Year Of Graduation</label>
+        <input list="yog" name="yop" id="yop" />
+        <datalist id="yog">
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+          <option>2022</option>
+          <option>2023</option>
+        </datalist>
+        <br /><br />
+        <label for="">Skills</label><br />
+        <input type="checkbox" name="skill" id="java" />
+        <label for="java">JAVA</label> <br /><br />
+
+        <input type="checkbox" name="skill" id="sql" />
+        <label for="sql">SQL</label><br /><br />
+
+        <input type="checkbox" name="skill" id="html" />
+        <label for="html">HTML</label><br /><br />
+
+        <input type="checkbox" name="skill" id="css" />
+        <label for="css">CSS</label><br /><br />
+
+        <input type="checkbox" name="skill" id="javascript" />
+        <label for="javascript">JAVASCRIPT</label><br />
+        <br />
+      </fieldset>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
